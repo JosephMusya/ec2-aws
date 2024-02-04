@@ -2,10 +2,10 @@ version: "3"
 
 services:
   backend:
-    image: musia/gigitise-backend
+    # image: musia/gigitise-backend
     build:
       context: ./client-backend
-    command: gunicorn core.wsgi --bind 0.0.0.0:8000
+    command: gunicorn flexypro.wsgi --bind 0.0.0.0:8000
     ports:
       - 8000:8000
 
